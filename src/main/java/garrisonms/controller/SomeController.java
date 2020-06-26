@@ -11,6 +11,6 @@ public class SomeController {
     @ResponseBody
     @RequestMapping(value = "/cicdtest", method = RequestMethod.GET)
     public String ciCdTest() {
-        return "CI/CD test v 0.4 worked";
+        return "CI/CD test v 0.5 worked";
     }
 }
