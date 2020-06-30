@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class SomeController {
+public class HealthCheckController {
 
     @ResponseBody
-    @RequestMapping(value = "/cicdtest", method = RequestMethod.GET)
-    public String ciCdTest() {
-        return "CI/CD test v 0.7 worked";
+    @RequestMapping(value = "/healthcheck", method = RequestMethod.GET)
+    public String healthCheck() {
+        return "Healthcheck v 0.1";
     }
 }
